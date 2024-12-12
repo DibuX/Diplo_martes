@@ -1,0 +1,38 @@
+.cuerpo {
+    background-color: antiquewhite;
+}
+h1 {
+    text-align: center;
+    font-family:sans-serif
+}
+
+img {
+    transition: transform 0.2s ease-in-out;
+    display: block;
+    margin: auto;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+
+.Series {
+    background-color:  rgb(168, 252, 12);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+}
+
+#Pelis {
+    background-color: rgb(255, 0, 128);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+}
+
+.span {
+    color: red;
+}
