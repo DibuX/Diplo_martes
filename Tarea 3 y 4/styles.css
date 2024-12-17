@@ -1,5 +1,6 @@
 .cuerpo {
-    background-color: antiquewhite;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(191,245,139,1) 1%, rgba(110,215,210,1) 62%, rgba(0,212,255,1) 100%);
 }
 h1 {
     text-align: center;
@@ -10,6 +11,8 @@ img {
     transition: transform 0.2s ease-in-out;
     display: block;
     margin: auto;
+    box-shadow: 0px 0px 35px black
+
 }
 
 img:hover{
@@ -17,12 +20,20 @@ img:hover{
 }
 
 
+
+.cajas {
+    display: flex;
+    justify-content:space-around;
+    
+}
 .Series {
     background-color:  rgb(168, 252, 12);
     padding: 20px;
     box-sizing: border-box;
     width: 300px;
     height: 200px;
+    border-radius: 20px;
+   
 }
 
 #Pelis {
@@ -31,8 +42,14 @@ img:hover{
     box-sizing: border-box;
     width: 300px;
     height: 200px;
+    border-radius: 20px 0;
 }
 
-.span {
+.spanpc {
     color: red;
+}
+
+
+.textos {
+    text-align: center;
 }
