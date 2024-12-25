@@ -1,33 +1,35 @@
-.caja-main {
-    border: 1px solid #aaa;
-    background-color: bisque;
-    margin: 0 auto;
-    width: 50%;
-    height: 500px;
+body {
+    margin: 0;
+    height: 100vh;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.caja-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; 
+    height: 200px; 
+    border: 2px solid #000; 
+    background-color: bisque;
 }
 
 
 .verde {
     background-color: #008000;
-    height: 33.33%;
-    width: 200px;
     color: white;
 }
 
 .azul {
-    height: 33.33%;
-    width: 200px;
     background-color: blue;
     color: white;
-   
 }
 
 .rojo {
-    width: 200px;
     background-color: red;
-    height: 33.33%;
     color: white;
 }
 
@@ -35,4 +37,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 200px;
+    height: 200px;
 }
