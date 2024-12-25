@@ -1,0 +1,33 @@
+.caja-main {
+    border: 1px solid #aaa;
+    background-color: bisque;
+    margin: 0 auto;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end; 
+}
+.verde {
+    background-color: #008000;
+    height: 33.33%;
+    width: 200px;
+    color: white;
+}
+.azul {
+    height: 33.33%;
+    width: 200px;
+    background-color: blue;
+    color: white;
+   
+}
+.rojo {
+    width: 200px;
+    background-color: red;
+    height: 33.33%;
+    color: white;
+}
+.azul, .rojo, .verde {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
