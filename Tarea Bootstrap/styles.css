@@ -1,0 +1,36 @@
+body {
+    background-color: wheat;
+}
+.marca {
+    color: white;
+}
+
+.marca:hover{
+    color: wheat;
+}
+
+.busqueda {
+    color: wheat;
+}
+.custom-border {
+    border: 2px solid wheat;
+}
+
+.busqueda:hover {
+    background-color: wheat;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    border: none;
+}
+.transparent-card {
+    background-color: transparent !important; 
+}
+
+.cajas {
+    border: 1px solid black;
+}
