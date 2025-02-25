@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Determinar Medio de Transporte</h1>
+    <label for="distance">Ingrese la distancia en metros:</label>
+    <input type="number" id="distance" />
+    <button id="checkTransport">Verificar Transporte</button>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('checkTransport').addEventListener('click', function() {
+            const distance = Number(document.getElementById('distance').value);
+            const transport = determineTransport(distance);
+            alert(`El medio de transporte apropiado es: ${transport}`);
+        });
+    </script>
+</body>
+</html>
