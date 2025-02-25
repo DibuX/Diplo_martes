@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiador de Color</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.3s ease;
+        }
+        
+        h1 {
+            margin-bottom: 40px;
+        }
+        
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .square {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .square:hover {
+            transform: scale(1.05);
+        }
+        
+        #red-square {
+            background-color: #ff5555;
+        }
+        
+        #blue-square {
+            background-color: #5555ff;
+        }
+        
+        #green-square {
+            background-color: #55aa55;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tocá para cambiar el color de fondo</h1>
+    <div class="container">
+        <div id="red-square" class="square" onclick="changeBackgroundColor('#ff5555')"></div>
+        <div id="blue-square" class="square" onclick="changeBackgroundColor('#5555ff')"></div>
+        <div id="green-square" class="square" onclick="changeBackgroundColor('#55aa55')"></div>
+    </div>
+
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>

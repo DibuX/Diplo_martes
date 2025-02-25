@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnos Aprobados</title>
+</head>
+<body>
+    <h1>Alumnos Aprobados</h1>
+    <form id="studentForm">
+        <input type="text" id="studentName" placeholder="Introduce el nombre del alumno" required>
+        <button type="submit">Buscar</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        var alumnos = [
+            { nombre: 'Juan Gomez', nota: 7 },
+            { nombre: 'Pedro Rodriguez', nota: 4 },
+            { nombre: 'Roxana García', nota: 8 },
+            { nombre: 'Luciano Lopez', nota: 5 },
+            { nombre: 'Fernanda Gimenez', nota: 6 },
+            { nombre: 'Florencia Martinez', nota: 10 },
+            { nombre: 'Raul Sanchez', nota: 7 },
+            { nombre: 'Sandra Figueroa', nota: 8 }
+        ];
+
+        document.getElementById('studentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var inputName = document.getElementById('studentName').value.toLowerCase();
+            var aprobados = alumnos.filter(alumno => alumno.nota >= 7 && alumno.nombre.toLowerCase().includes(inputName));
+            displayResults(aprobados);
+        });
+
+        function displayResults(aprobados) {
+            var resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '';
+            if (aprobados.length > 0) {
+                aprobados.forEach(alumno => {
+                    var p = document.createElement('p');
+                    p.textContent = `${alumno.nombre} - Nota: ${alumno.nota}`;
+                    resultDiv.appendChild(p);
+                });
+            } else {
+                resultDiv.textContent = 'No se encontraron alumnos aprobados.';
+            }
+        }
+    </script>
+</body>
+</html>
